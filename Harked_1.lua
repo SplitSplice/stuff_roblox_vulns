@@ -371,7 +371,7 @@ function getPlayer(list,speaker)
 end
 function Destroy(instance)
 	spawn(function()
-		game:GetService("Workspace").Events.Car.Remove_:FireServer(instance)
+		game:GetService("Workspace").SegwayEvents.SegwayEventRemove:FireServer(instance)
 	end)
 end
 

@@ -371,12 +371,12 @@ function getPlayer(list,speaker)
 end
 function Destroy(instance)
 	spawn(function()
-		if getgenv().useRemote1 == true then
-				getgenv().remote1:FireServer(instance)
+		if getgenv().useRemote1 == true then:
+			getgenv().remote1:FireServer(instance)
 		elseif getgenv.useRemote1 == false then
-				getgenv.remote2:FireServer(instance)
+			getgenv.remote2:FireServer(instance)
 		else
-				print("Invalid useRemote option! Please use true or false!"
+			print("Invalid useRemote option! Please use true or false!"
 	end)
 end
 

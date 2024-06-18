@@ -1,1 +1,1 @@
-print(1)
+print(getgenv().remote1.Name)

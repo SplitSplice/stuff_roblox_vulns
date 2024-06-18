@@ -371,7 +371,12 @@ function getPlayer(list,speaker)
 end
 function Destroy(instance)
 	spawn(function()
-		game:GetService("Workspace").SegwayEvents.SegwayEventRemove:FireServer(instance)
+		if getgenv().useRemote1 == true then
+				getgenv().remote1:FireServer(instance)
+		elseif getgenv.useRemote1 == false then
+				getgenv.remote2:FireServer(instance)
+		else
+				print("Invalid useRemote option! Please use true or false!"
 	end)
 end
 

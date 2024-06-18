@@ -377,6 +377,7 @@ function Destroy(instance)
 			getrenv.remote2:FireServer(instance)
 		else
 			print("Invalid useRemote option! Please use true or false!"
+		end
 	end)
 end
 
